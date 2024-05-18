@@ -1,5 +1,2 @@
-  cout << "语文成绩为:" << endl; // 输出标题
-    for (int i = 0; i < 5; i++)
-    {
-        cout << scores[i][0] << endl; // 输出语文成绩
-    }
+    // cout << a2 << endl;                       // 输出"ab"
+    // cout << "输出a2的ASCII码" << endl;        // 输出"97 98" 即a的ASCII码和b的ASCII码。
