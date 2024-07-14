@@ -50,14 +50,17 @@
         "iterator": "cpp",
         "numeric": "cpp",
         "random": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "*.2cpp": "c"
     },
     "Codegeex.Comment.LanguagePreference": "中文",
     "Codegeex.Chat.LanguagePreference": "中文",
     "Codegeex.SidebarUI.LanguagePreference": "中文",
     "Codegeex.Privacy": true,
-    "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
+    "Codegeex.CompletionModel": "CodeGeeX Lite",
     "Codegeex.CandidateNum": "1 (快)",
     "Codegeex.GenerationPreference": "line by line",
-    "Codegeex.CompletionDelay": 0.1
+    "Codegeex.CompletionDelay": 0.1,
+    "Codegeex.UseSimilarFileForPrompt": false,
+    "liveServer.settings.port": 5502
 }
