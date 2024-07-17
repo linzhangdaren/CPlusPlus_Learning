@@ -3,19 +3,6 @@
 using namespace std;
 const int MAX = 1000; // 最大联系人个数
 
-void showMenu()
-{
-    cout << "***************************" << endl;
-    cout << "*****  1、添加联系人  *****" << endl;
-    cout << "*****  2、显示联系人  *****" << endl;
-    cout << "*****  3、删除联系人  *****" << endl;
-    cout << "*****  4、查找联系人  *****" << endl;
-    cout << "*****  5、修改联系人  *****" << endl;
-    cout << "*****  6、清空联系人  *****" << endl;
-    cout << "*****  0、退出通讯录  *****" << endl;
-    cout << "***************************" << endl;
-}
-
 // 设计联系人结构体
 struct Person
 {
@@ -54,10 +41,64 @@ void addPerson(Addressbooks *abs)
     else
     {
         // 添加联系人
+        // 添加姓名
+        string name;
         cout << "请输入姓名:" << endl;
-        cin >> abs->PersonArray[abs->m_Size].m_Name;
+        cin >> name;
+        abs->PersonArray[abs->m_Size].m_Name = name;
+        // 添加性别
+        int sex;
+        cout << "请输入性别(1-男 2-女):" << endl;
+        cout << "请输入性别对应的数字:" << endl;
+        while (true)
+        {
+            cin >> sex;
+            if (sex == 1 || sex == 2)
+            {
+                abs->PersonArray[abs->m_Size].m_Sex = sex == 1 ? "男" : "女";
+                break;
+            }
+            cout << "输入有误，请重新输入!" << endl;
+        }
+        // 添加年龄
+        int age;
+        cout << "请输入年龄:" << endl;
+        cin >> age;
+        abs->PersonArray[abs->m_Size].m_Age = age;
+
+        // 添加电话
+        string phone;
+        cout << "请输入电话:" << endl;
+        cin >> phone;
+        abs->PersonArray[abs->m_Size].m_Phone = phone;
+
+        // 添加地址
+        string address;
+        cout << "请输入地址:" << endl;
+        cin >> address;
+        abs->PersonArray[abs->m_Size].m_Addr = address;
+
+        // 更新通讯录中人员个数
+        abs->m_Size++;
+        cout << "添加成功!" << endl;
+        system("pause");
+        system("cls"); // 清屏
     }
 };
+
+// 显示菜单函数
+void showMenu()
+{
+    cout << "***************************" << endl;
+    cout << "*****  1、添加联系人  *****" << endl;
+    cout << "*****  2、显示联系人  *****" << endl;
+    cout << "*****  3、删除联系人  *****" << endl;
+    cout << "*****  4、查找联系人  *****" << endl;
+    cout << "*****  5、修改联系人  *****" << endl;
+    cout << "*****  6、清空联系人  *****" << endl;
+    cout << "*****  0、退出通讯录  *****" << endl;
+    cout << "***************************" << endl;
+}
 
 int main()
 {
