@@ -23,6 +23,20 @@ struct Addressbooks
     int m_Size;
 };
 
+// 显示菜单
+void showMenu()
+{
+    cout << "***************************" << endl;
+    cout << "*****  1、添加联系人  *****" << endl;
+    cout << "*****  2、显示联系人  *****" << endl;
+    cout << "*****  3、删除联系人  *****" << endl;
+    cout << "*****  4、查找联系人  *****" << endl;
+    cout << "*****  5、修改联系人  *****" << endl;
+    cout << "*****  6、清空联系人  *****" << endl;
+    cout << "*****  0、退出通讯录  *****" << endl;
+    cout << "***************************" << endl;
+}
+
 // 添加联系人函数
 void addPerson(Addressbooks *abs)
 // 假设你有一个通讯录本子（Addressbooks abs），你想要添加一个新联系人。
@@ -85,20 +99,6 @@ void addPerson(Addressbooks *abs)
         system("cls"); // 清屏
     }
 };
-
-// 显示菜单函数
-void showMenu()
-{
-    cout << "***************************" << endl;
-    cout << "*****  1、添加联系人  *****" << endl;
-    cout << "*****  2、显示联系人  *****" << endl;
-    cout << "*****  3、删除联系人  *****" << endl;
-    cout << "*****  4、查找联系人  *****" << endl;
-    cout << "*****  5、修改联系人  *****" << endl;
-    cout << "*****  6、清空联系人  *****" << endl;
-    cout << "*****  0、退出通讯录  *****" << endl;
-    cout << "***************************" << endl;
-}
 
 int main()
 {
