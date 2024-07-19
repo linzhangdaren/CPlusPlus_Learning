@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
+#pragma execution_character_set("utf-8")
 using namespace std;
 const int MAX = 1000; // 最大联系人个数
+ 
 
-// 设计联系人结构体
-struct Person
+    // 设计联系人结构体
+    struct Person
 {
     string m_Name;
     string m_Sex;
@@ -100,26 +102,45 @@ void addPerson(Addressbooks *abs)
     }
 };
 
+// 显示联系人函数
+void showPerson(Addressbooks *abs) // 用值传递也行但是用指针的话节省内存
+{
+    // 如果通讯录为空，则提示用户为空
+    if (abs->m_Size == 0)
+    {
+        cout << "通讯录为空" << endl;
+    }
+    else
+    {
+        // 遍历通讯录，显示所有联系人信息
+        for (int i = 0; i < abs->m_Size; i++)
+        {
+            cout << " 姓名：" << abs->PersonArray[i].m_Name
+                 << " 性别：" << abs->PersonArray[i].m_Sex
+                 << " 年龄：" << abs->PersonArray[i].m_Age
+                 << " 电话：" << abs->PersonArray[i].m_Phone
+                 << " 地址：" << abs->PersonArray[i].m_Addr
+                 << endl;
+        }
+    }
+    system("pause");
+    system("cls"); // 清屏
+}
+
+// 主函数
 int main()
 {
     // 创建通讯录结构体变量并初始化
-    // abs：这是根据 Addressbooks 这个模板创建出来的一个具体的通讯录实例。
-    // 就像你根据名片盒的设计图做出来的一个实际的名片盒，你可以拿在手里用，往里面放名片。
-    Addressbooks abs;
+    Addressbooks abs; // abs根据 Addressbooks 模板创建出实例。根据图做出的名片盒，可拿在手里用，往里面放名片。
     abs.m_Size = 0;
+    int select = 0; // 创建选择变量用来接收用户的选择
 
-    // 创建选择变量
-    int select = 0;
-
-    // 循环体
-    while (true)
+    while (true) // 循环体
     {
-        // 菜单调用
-        showMenu();
-        // 用户输入选择
+        showMenu(); // 菜单调用
+
         cout << "请输入您的选择:" << endl;
-        cin >> select;
-        // 根据用户选择，执行相应操作:
+        cin >> select; // 根据用户选择，执行相应操作:
         switch (select)
         {
         case 1:
@@ -129,6 +150,7 @@ int main()
 
         case 2:
             cout << "显示联系人" << endl;
+            showPerson(&abs);
             break;
 
         case 3:
