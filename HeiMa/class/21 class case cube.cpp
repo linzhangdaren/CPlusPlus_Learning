@@ -56,11 +56,13 @@ public:
     }
 };
 
+// 判断两个立方体是否相等
 bool isSame(Cube &c1, Cube &c2)
 {
     if (c1.getL() == c2.getL() && c1.getW() == c2.getW() && c1.getH() == c2.getH())
         return true;
 }
+
 int main()
 {
     // 第一个立方体
