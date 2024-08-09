@@ -1,4 +1,6 @@
-int Max(int A, int B);
+#include "04 header file.h"
+
+
 
 int Max(int A, int B)
 {

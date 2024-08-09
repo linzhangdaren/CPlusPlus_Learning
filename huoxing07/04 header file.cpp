@@ -1,5 +1,7 @@
 #include <iostream>
+#include "04 header file.h"
 using namespace std;
+
 // 跨文件调用函数
 
 int main()
