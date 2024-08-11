@@ -34,7 +34,7 @@ public:
 int main()
 {
 
-    Animal *dog = new Dog(); // 父类指针指向子类 ,但子类不能调用父类的函数
+    Animal *dog = new Dog(); // 父类指针可以指向子类,但是子类指针不能指向父类
     dog->Say();              // 调用dog对象的Say()函数
 
     Animal *cat = new Cat();
