@@ -54,12 +54,14 @@ class Person
 public:
     // 成员变量
     string Name;
-    class Gun *Gun; // 用抢类的指针来接收传来的枪的地址
+    class Gun *Gun;       // 用抢类的指针来接收传来的枪的地址
+    class Bullet *Bullet; // 用子弹类的指针来接收传来的子弹的地址
     // 成员函数
     Person(string name) // 用构造函数直接接收"老王"名字初始化了
     {
         this->Name = name;
-        this->Gun = NULL; // 初始化的时候,老王没有枪,不然野指针会报错的
+        this->Gun = NULL;    // 初始化的时候,老王没有枪,不然野指针会报错的
+        this->Bullet = NULL; // 初始化的时候,老王没有子弹,不然野指针会报错的
     }
     // 显示打印输出人类信息
     void display_info()
@@ -74,12 +76,27 @@ public:
         {
             cout << "没有枪" << endl;
         }
+        // 如果有子弹,就打印子弹的信息
+        if (this->Bullet)
+        {
+            cout << "有子弹" << endl;
+        }
+        else
+        {
+            cout << "没有子弹" << endl;
+        }
     }
     // 老王拿起枪函数
     void take_gun(class Gun *gun) // 用来接收枪的地址,类型是枪类型的指针Gun*
     {
-        this->Gun = gun; // 把枪的地址赋值给老王
-        cout<<this->Name<<"拿起了"<<gun->Name<<endl;//打印老王拿起了什么枪
+        this->Gun = gun;                                     // 把枪的地址赋值给老王
+        cout << this->Name << "拿起了" << gun->Name << endl; // 打印老王拿起了什么枪
+    }
+    // 老王拿子弹
+    void take_bullet(class Bullet *bullet)
+    {
+        this->Bullet = bullet;
+        cout << this->Name << "拿起了" << bullet->Name << endl; // 打印老王拿起了什么子弹
     }
 };
 
@@ -92,8 +109,10 @@ int main()
     class Bullet bullet("7.62", 10);
 
     // 老王拿枪:
-    hero.take_gun(&gun); // 老王拿起枪函数,需要把枪的地址传给老王,如果是值传递,那么老王只能拿到一个拷贝,所以用指针
-    hero.display_info(); // 打印老王信息
+    hero.take_gun(&gun);       // 老王拿起枪函数,需要把枪的地址传给老王,如果是值传递,那么老王只能拿到一个拷贝,所以用指针
+    hero.take_bullet(&bullet); // 老王拿上子弹
+    hero.display_info();       // 打印老王信息
     
+
     return 0;
 }
