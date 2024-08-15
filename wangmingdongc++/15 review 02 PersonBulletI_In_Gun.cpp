@@ -1,13 +1,10 @@
 #include <iostream>
 #include <string>
 using namespace std;
-// 老王拿起枪&拿起子弹
+// 老王把子弹安装到枪中
+// 老王Person类对象直接和子弹对象关联是没有意义的,得让枪和子弹关联才行
 
-// 把枪的对象地址传给老王hero.take_gun(&gun);
-// 老王拿枪函数:void take_gun(class Gun*gun)
-
-// 判断老王是否拿起枪if (this->Gun)
-// 初始化老王没有枪:this->Gun = NULL;
+// 把子弹装枪里的函数,put_bullet_to_gun
 
 // 定义一个子弹类
 class Bullet
@@ -35,15 +32,23 @@ class Gun
 public:
     // 成员变量
     string Name;
+    class Bullet *Bullet; // 用子弹类的指针来接收传来的子弹的地址10发子弹
     // 成员函数
     Gun(string name)
     {
         this->Name = name;
+        this->Bullet = NULL; // 初始化的时候,枪里没有子弹,不然野指针会报错的
     }
     // 显示打印输出枪的信息
     void display_info()
     {
         cout << "枪型号:" << this->Name << endl;
+    }
+    //
+    void save_bullet(class Bullet *bullet)
+    {
+        cout << this->Name << "装了" << bullet->Name << endl;
+        this->Bullet = bullet;
     }
 };
 
@@ -98,6 +103,20 @@ public:
         this->Bullet = bullet;
         cout << this->Name << "拿起了" << bullet->Name << endl; // 打印老王拿起了什么子弹
     }
+    // 老王把子弹安装到枪里函数
+    void put_bullet_to_gun()
+    {
+        // 如果老王有枪,并且有子弹,那么就把子弹安装到枪里
+        if (this->Gun == NULL || this->Bullet == NULL)
+        {
+            cout << "老王没有枪或者没有子弹" << endl;
+        }
+        else
+        {
+            this->Gun->save_bullet(this->Bullet); // 调用枪类的保存子弹函数,把子弹的地址传给枪类
+            this->Bullet = NULL;                  // 老王把子弹拿走了,所以老王没有子弹了
+        }
+    }
 };
 
 // 主函数
@@ -112,6 +131,7 @@ int main()
     hero.take_gun(&gun);       // 老王拿起枪函数,需要把枪的地址传给老王,如果是值传递,那么老王只能拿到一个拷贝,所以用指针
     hero.take_bullet(&bullet); // 老王拿上子弹
     hero.display_info();       // 打印老王信息
+    hero.put_bullet_to_gun();  // 老王把子弹安装到枪里
 
     return 0;
 }
