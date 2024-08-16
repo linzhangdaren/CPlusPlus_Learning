@@ -11,7 +11,7 @@ int main()
 
     cout << "a: " << a << endl;//11
     cout << "*p: " << *p << endl;//11
-    cout << "**p2: " << **p2 << endl;//
+    cout << "**p2: " << **p2 << endl;//11
     cout << endl;
 
     cout << "&a: " << &a << endl;//xxx
