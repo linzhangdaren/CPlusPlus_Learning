@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
-//访问权限:public、protected、private
+// 访问权限:public、protected(继承时候用)、private
+// 没有顺序可以插入写 无数量限制
+
 class Person
 {
 public: // public 公共访问权限C/C++C/C++
@@ -8,6 +10,9 @@ public: // public 公共访问权限C/C++C/C++
 
 private: // private 私有访问权限
     float money;
+
+public: // 可以插写
+    int num;
 };
 
 int main()
