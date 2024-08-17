@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//类成员
 class MyClass
 {
 public:

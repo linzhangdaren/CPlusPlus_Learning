@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//构造函数.析构函数
 class Stu
 {
 public:
@@ -11,6 +11,7 @@ public:
         cout<<"name="<<name<<endl;
     }
 };
+;
 
 int main()
 {

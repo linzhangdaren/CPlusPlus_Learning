@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//访问权限:public、protected、private
 class Person
 {
 public: // public 公共访问权限C/C++C/C++
@@ -14,7 +14,7 @@ int main()
 {
     class Person p1;
     cout << "p1的年龄为：" << p1.age << endl;
-    cout << "p1的财富为：" << p1.money << endl;
+    // cout << "p1的财富为：" << p1.money << endl;
 
     return 0;
 }

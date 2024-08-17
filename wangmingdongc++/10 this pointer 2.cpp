@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//再次理解this指针
 class Person
 {
 public:

@@ -51,7 +51,8 @@
         "numeric": "cpp",
         "random": "cpp",
         "ratio": "cpp",
-        "*.2cpp": "c"
+        "*.2cpp": "c",
+        "*. class object cpp": "c"
     },
     "Codegeex.Comment.LanguagePreference": "中文",
     "Codegeex.Chat.LanguagePreference": "中文",

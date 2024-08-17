@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//数据与函数
 class Stu //定义一个类名为Stu
 {
 public://公共权限
