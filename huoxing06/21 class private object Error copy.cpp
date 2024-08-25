@@ -11,13 +11,13 @@ using namespace std;
 
 class Animal
 {
-    // public: // 默认是private,所以需要手动声明public这样修改对象才不会报错
-    int Age;
+public: // 默认是private,所以需要手动声明public这样修改对象才不会报错
+    int Age = 1;
 };
 
 int main()
 {
     Animal a;
-    a.Age = 1; // 类默认权限是private,所以无法访问对象Age,需要在类中声明public
+    cout<<a.Age;
     return 0;
 }
