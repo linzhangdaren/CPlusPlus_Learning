@@ -24,9 +24,8 @@ public:
 int main()
 {
     GameMode::Get()->Say();
- 
 
-    class GameMode a;
+    // class GameMode a;
 
     return 0;
 }
