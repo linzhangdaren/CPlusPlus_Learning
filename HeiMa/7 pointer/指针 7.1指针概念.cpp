@@ -1,8 +1,8 @@
 
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
-void code(char* p, size_t n)
+void code(char *p, size_t n)
 {
     size_t i;
     for (i = 0; i < n; i++)
@@ -13,9 +13,9 @@ void code(char* p, size_t n)
 
 int main()
 {
-    FILE* p1 = fopen("./a.txt", "r");
-    FILE* p2 = fopen("./b.txt", "w");
-    char buf[1024] = { 0 };
+    FILE *p1 = fopen("./a.txt", "r");
+    FILE *p2 = fopen("./b.txt", "w");
+    char buf[1024] = {0};
 
     while (!feof(p1))
     {

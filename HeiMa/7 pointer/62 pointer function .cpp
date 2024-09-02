@@ -2,6 +2,7 @@
 using namespace std;
 
 // 指针函数
+// 指针可以直接修改实参的值,不是复制
 void swap(int *p, int *p1)
 {
     int temp = *p;
