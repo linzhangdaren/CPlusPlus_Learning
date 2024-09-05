@@ -58,6 +58,8 @@ void test01()
 int main()
 {
     test01();
+    // 调用默认构造函数不能加括号
+    Person p1; // 如果加括号编译器会认为是一个函数声明
 
     system("pause");
     return 0;

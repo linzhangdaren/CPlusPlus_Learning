@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 // 初始化列表
+//用变量abc代替常量123的写法
 class Person
 {
 public:

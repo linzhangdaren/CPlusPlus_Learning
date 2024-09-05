@@ -7,7 +7,7 @@ const double PI = 3.1415926;
 class Circle
 {
 public:
-    int m_r;
+    int m_r;//半径
 
     double calculateZCh()
     {

@@ -61,7 +61,7 @@ public:
 // 判断点和圆的关系
 void is_in_circle(Circle &c, Point &p)
 {
-    // 计算两点距离 平房
+    // 计算两点距离 平方
     int distance =
         (c.get_center().get_x() - p.get_x()) * (c.get_center().get_x() - p.get_x()) +
         (c.get_center().get_y() - p.get_y()) * (c.get_center().get_y() - p.get_y());

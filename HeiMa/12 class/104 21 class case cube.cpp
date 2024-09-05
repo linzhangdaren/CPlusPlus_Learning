@@ -54,13 +54,26 @@ public:
     {
         return m_L * m_W * m_H;
     }
+
+    // 成员函数判断两个立方体是否相等
+    bool isSameByClass(Cube &c)
+    {
+        if (m_L == c.getL() && m_W == c.getW() && m_H == c.getH())
+        {
+            return true;
+        }
+        return false;
+    }
 };
 
 // 判断两个立方体是否相等
 bool isSame(Cube &c1, Cube &c2)
 {
     if (c1.getL() == c2.getL() && c1.getW() == c2.getW() && c1.getH() == c2.getH())
+    {
         return true;
+    }
+    return false;
 }
 
 int main()
@@ -79,6 +92,8 @@ int main()
     c2.setH(10);
     // 对比两个立方体是否相等
     cout << "c1和c2" << (isSame(c1, c2) ? "相等" : "不相等") << endl;
+    // 对比两个立方体是否相等成员函数
+    cout << "c1和c2" << (c1.isSameByClass(c2) ? "相等" : "不相等") << endl;
     system("pause");
     return 0;
 }

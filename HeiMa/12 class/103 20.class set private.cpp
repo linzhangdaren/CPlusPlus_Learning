@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+// 可读可写的功能和数据有效性的判断
 class Person
 {
 private:
@@ -22,9 +22,14 @@ public:
         return m_Name;
     }
 
-    // 设置年龄
+    // 设置年龄(0~150) 数据有效性的判断
     void setAge(int age)
     {
+        if (age < 0 || age > 150)
+        {
+            cout << "年龄不合法" << endl;
+            return; // 直接中断代码
+        }
         m_Age = age;
     }
     // 设置偶像
