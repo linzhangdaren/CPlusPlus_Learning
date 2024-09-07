@@ -32,7 +32,7 @@ int main()
     p2.m_a = 3;
     p2.m_b = 4;
 
-    Person p3 = p1.operator+(p2); // 基础写法
+    Person p3 = p1.operator+(p2); // 基础写法//如同上个文件中的 p3 = p1.PersonAddPerson(p2);
     Person p4 = p1 + p2;          // operator重载简化写法
 
     cout << p3.m_a << " " << p3.m_b << endl;
