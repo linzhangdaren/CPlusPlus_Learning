@@ -52,7 +52,8 @@
         "random": "cpp",
         "ratio": "cpp",
         "*.2cpp": "c",
-        "*. class object cpp": "c"
+        "*. class object cpp": "c",
+        "*. template class member definition outside of classcpp": "c"
     },
     "Codegeex.Comment.LanguagePreference": "中文",
     "Codegeex.Chat.LanguagePreference": "中文",
