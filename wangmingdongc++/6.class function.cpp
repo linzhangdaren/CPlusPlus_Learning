@@ -13,7 +13,7 @@ public://公共权限
         string name ="jay chou";
         cout << "name = " << name << endl;
     }
-};
+};//
 
 int main()
 {
