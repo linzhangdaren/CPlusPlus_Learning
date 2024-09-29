@@ -64,7 +64,7 @@
     "Codegeex.GenerationPreference": "line by line",
     "Codegeex.CompletionDelay": 0.1,
     "Codegeex.UseSimilarFileForPrompt": false,
-    "liveServer.settings.port": 5502,
+    "liveServer.settings.port": 5559,
     "Codegeex.RepoIndex": true,
     "editor.fontFamily": "Consolas , Microsoft YaHei , Cascadia Mono",
     "editor.fontLigatures": false
