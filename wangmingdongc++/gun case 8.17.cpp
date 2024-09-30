@@ -98,5 +98,7 @@ int main()
     // 老王把子弹装到枪里
     hero.PutBulletInGun();
 
+
+
     return 0;
 }
