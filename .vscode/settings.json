@@ -67,5 +67,7 @@
     "liveServer.settings.port": 5559,
     "Codegeex.RepoIndex": true,
     "editor.fontFamily": "Consolas , Microsoft YaHei , Cascadia Mono",
-    "editor.fontLigatures": false
+    "editor.fontLigatures": false,
+    "terminal.integrated.shellArgs.windows": ["/K", "chcp 65001 >nul"],
+    "terminal.integrated.fontFamily": "Consolas"
 }

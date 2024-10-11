@@ -96,5 +96,8 @@ int main()
     // 老王把子弹装上枪
     hero.putBulletInGun();
 
+    cin.get();
+    cin.get();
+
     return 0;
 }
