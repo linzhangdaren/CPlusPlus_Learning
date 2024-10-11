@@ -1,4 +1,4 @@
-// 格式化输出流 formatted output stream
+// 格式化输出流 formatted output stream 方便控制格式的排版和分格线
 // 以什么形式输出 比如std::fixed就是以固定小数形式输出
 #include <iostream>
 #include <iomanip>
