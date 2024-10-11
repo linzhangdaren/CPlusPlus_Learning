@@ -1,6 +1,7 @@
 // system 基础指令
 // //提取系统命令语法: 在cmd中写:shutdown /?
-
+// endl的意思是end结束l是line的意思，即换行。
+// printf 是print+format的缩写是一个函数,cout是对象
 #include <iostream>
 int main()
 {

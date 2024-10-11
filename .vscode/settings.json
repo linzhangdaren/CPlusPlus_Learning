@@ -55,6 +55,8 @@
         "*. class object cpp": "c",
         "*. template class member definition outside of classcpp": "c"
     },
+    "files.encoding": "utf8",
+    "locale": "zh-cn",
     "Codegeex.Comment.LanguagePreference": "中文",
     "Codegeex.Chat.LanguagePreference": "中文",
     "Codegeex.SidebarUI.LanguagePreference": "中文",
