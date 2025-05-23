@@ -14,7 +14,9 @@ import pygame
 #初始化pygame
 pygame.init()
 #设置窗口大小
-screen=pygame.display.set_mode((640,480))
+screen_width=640#窗口宽度
+screen_height=480#窗口高度
+screen=pygame.display.set_mode((screen_width,screen_height))
 #设置窗口标题
 pygame.display.set_caption("贪吃蛇")
 #设置窗口图标
@@ -56,8 +58,11 @@ while True:
     # c.渲染界面
     screen.fill(color_bg)#RGB填充颜色
     #画线
-    pygame.draw.line(screen,color_line,(0,0),(300,100),1)
-    
+    # pygame.draw.line(screen,color_line,(0,0),(300,100),1)#参数分别为:画到屏幕,颜色,起点坐标,终点坐标,线宽
+    for y in range(0,screen_height,20):#画横线
+        pygame.draw.line(screen,color_line,(0,y),(screen_width,y),1)
+    for x in range(0,screen_width,20):#画竖线
+        pygame.draw.line(screen,color_line,(x,0),(x,screen_height),1)
     pygame.display.flip()#刷新窗口
     
     # d.设置帧率
