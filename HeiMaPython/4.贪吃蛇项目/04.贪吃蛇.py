@@ -34,7 +34,7 @@ color_line=(255,255,255)
 
 #循环窗口固定住
 while True:
-    #a.处理用户输入事件
+    #a.处理用户输入事件================================================
     for event in pygame.event.get():#判断事件是否为退出事件        
         if event.type==pygame.QUIT:#退出游戏            
             pygame.quit()# exit()
@@ -53,9 +53,11 @@ while True:
                 pygame.quit()#退出游戏
                 # exit()
                 
-    # b.处理游戏逻辑
+    # b.处理游戏逻辑============================================================================
     
-    # c.渲染界面
+    
+    
+    # c.渲染界面================================================================================
     screen.fill(color_bg)#RGB填充颜色
     #画线
     # pygame.draw.line(screen,color_line,(0,0),(300,100),1)#参数分别为:画到屏幕,颜色,起点坐标,终点坐标,线宽
@@ -65,6 +67,6 @@ while True:
         pygame.draw.line(screen,color_line,(x,0),(x,screen_height),1)
     pygame.display.flip()#刷新窗口
     
-    # d.设置帧率
+    # d.设置帧率============================================================================
     clock.tick(60)    
     # print(clock.get_fps())#显示帧率
