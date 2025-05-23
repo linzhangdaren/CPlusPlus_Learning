@@ -19,10 +19,10 @@ background_color=(128,128,128)
 
 #准备图片只加载不显示
 plane_image = pygame.image.load("plane.png")
-piw=180#图片宽度
-pih=200#图片高度
+piw=250#图片宽度
+pih=300#图片高度
 plane_image = pygame.transform.scale(plane_image, (piw,pih))
-plane_location=(screen_width/2-piw/2,screen_height/1.3-pih/2)
+plane_location=(screen_width/2-piw/2,screen_height/1.5-pih/2)
 
 
 #循环窗口固定住

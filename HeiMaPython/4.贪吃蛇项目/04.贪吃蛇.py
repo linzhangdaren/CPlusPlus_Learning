@@ -39,12 +39,13 @@ while True:
                 #退出游戏
                 pygame.quit()
                 # exit()
+                
 
     #填充背景色
     screen.fill((128,128,128))#RGB
     #设置帧率
     clock.tick(60)
     #显示帧率
-    print(clock.get_fps())
+    # print(clock.get_fps())
     #刷新界面
     pygame.display.flip()
