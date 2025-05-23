@@ -28,13 +28,18 @@ clock=pygame.time.Clock()
 #设置背景颜色
 color_bg=(128,128,128)
 #设置线颜色
-color_line=(255,255,255)
-#
+color_line=(180,180,180)
+#设置蛇头颜色
+color_head=(255,255,255)
+#设置方块大小
+block_size=20
+#设置食物颜色
+color_food=(255,0,0)
 
 
 #循环窗口固定住
 while True:
-    #a.处理用户输入事件================================================
+    #a.处理用户输入事件============================================
     for event in pygame.event.get():#判断事件是否为退出事件        
         if event.type==pygame.QUIT:#退出游戏            
             pygame.quit()# exit()
@@ -53,20 +58,30 @@ while True:
                 pygame.quit()#退出游戏
                 # exit()
                 
-    # b.处理游戏逻辑============================================================================
+    # b.处理游戏逻辑========================================================
     
     
     
-    # c.渲染界面================================================================================
+    # c.渲染界面=========================================================
     screen.fill(color_bg)#RGB填充颜色
     #画线
-    # pygame.draw.line(screen,color_line,(0,0),(300,100),1)#参数分别为:画到屏幕,颜色,起点坐标,终点坐标,线宽
-    for y in range(0,screen_height,20):#画横线
+    #参数分别为:画到屏幕,颜色,起点坐标,终点坐标,线宽
+    for y in range(0,screen_height,block_size):#画横线
         pygame.draw.line(screen,color_line,(0,y),(screen_width,y),1)
-    for x in range(0,screen_width,20):#画竖线
+    for x in range(0,screen_width,block_size):#画竖线
         pygame.draw.line(screen,color_line,(x,0),(x,screen_height),1)
-    pygame.display.flip()#刷新窗口
+    #画蛇头 参数为:画到屏幕,颜色,矩形坐标,矩形大小,边框圆角
+    pygame.draw.rect(screen,color_head,(5*block_size,3*block_size,block_size,block_size),border_radius=6)
+    pygame.draw.rect(screen,color_head,(4*block_size,3*block_size,block_size,block_size),border_radius=6)
+    pygame.draw.rect(screen,color_head,(3*block_size,3*block_size,block_size,block_size),border_radius=6)
+    #画食物
+    pygame.draw.rect(screen,color_food,(10*block_size,5*block_size,block_size,block_size),border_radius=5)
     
-    # d.设置帧率============================================================================
+    
+    
+    
+    pygame.display.flip()#刷新窗口
+    #绘制蛇身体
+    # d.设置帧率===========================================================
     clock.tick(60)    
     # print(clock.get_fps())#显示帧率
