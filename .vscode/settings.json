@@ -78,5 +78,6 @@
     "editor.fontLigatures": false, // 启用字体连字特性：将特殊符号组合显示为更易识别的单一符号(如==→≡, ->→→)
 
     "terminal.integrated.shellArgs.windows": ["/K", "chcp 65001 >nul"], // Windows终端设置UTF-8编码
-    "terminal.integrated.fontFamily": "Consolas" // 终端字体设置为Consolas
+    "terminal.integrated.fontFamily": "Consolas",
+    "commentTranslate.source": "Bing" // 终端字体设置为Consolas
 }
