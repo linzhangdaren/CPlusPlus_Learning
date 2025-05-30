@@ -72,7 +72,7 @@
 
     "editor.fontFamily": "JetBrains Mono , Consolas , Microsoft YaHei", // 编辑器字体设置
     "editor.fontSize": 14, // 字体大小设置为14px，平衡可读性与屏幕利用率
-    "editor.fontWeight": "550", // 字体粗细设置为标准(400等同于normal)，避免过细影响阅读
+    "editor.fontWeight": "650", // 字体粗细设置为标准(400等同于normal)，避免过细影响阅读
     "editor.letterSpacing": 0, // 字母间距微调：增加0.5px间距，提高代码字符间辨识度
     "editor.lineHeight": 1.5, // 行高设置为1.5倍，优化多行代码间的垂直空间和可读性
     "editor.fontLigatures": false, // 启用字体连字特性：将特殊符号组合显示为更易识别的单一符号(如==→≡, ->→→)
