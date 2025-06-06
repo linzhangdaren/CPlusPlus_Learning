@@ -1,28 +1,28 @@
 
 from PySide6.QtWidgets import QApplication, QWidget,QVBoxLayout
-from PySide6.QtWidgets import QPushButton
+from PySide6.QtWidgets import QPushButton,QHBoxLayout
 import sys
 
-# def btn_click():
-#     print("按钮被点击了")
 
-def input_box(window):#为什么要加window,因为要设置组件的父对象不加也行
+
+def input_box(window):
     #排版 竖直垂直排列 V=Vertical H=Horizontal
-    layout=QVBoxLayout()
+    layout=QHBoxLayout()#创建水平布局 QH改为QV就是水平的了如下:
+    # layout=QVBoxLayout()#创建垂直布局    
+    window.setLayout(layout) #把layout添加到窗口 
     
     #创建按钮
-    btn=QPushButton("请点击")
-    #关联点击事件/函数 
-    btn.clicked.connect(lambda:print("按钮被点击了"))
-    #添加到layout
-    layout.addWidget(btn)
-    
+    btn1=QPushButton("按钮1")
+    btn2=QPushButton("按钮2")
+    btn3=QPushButton("按钮3")
+    btn4=QPushButton("按钮4")
+    #添加按钮到布局
+    layout.addWidget(btn1)
+    layout.addWidget(btn2)
+    layout.addWidget(btn3)
+    layout.addWidget(btn4)
+ 
 
-
-    
-    
-    #把layout添加到窗口 
-    window.setLayout(layout)
     
     
     

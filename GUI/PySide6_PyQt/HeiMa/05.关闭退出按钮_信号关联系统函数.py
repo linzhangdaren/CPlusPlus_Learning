@@ -1,19 +1,25 @@
 
 from PySide6.QtWidgets import QApplication, QWidget,QVBoxLayout
 from PySide6.QtWidgets import QPushButton
+#导入信号槽 给程序员看的 告诉他不要直接调用函数 而是通过信号槽来调用函数
+from PySide6.QtCore import pyqtSlot
 import sys
 
-# def btn_click():
-#     print("按钮被点击了")
+@pyqtSlot# 装饰器 告诉python解释器 这是一个槽函数 不要直接调用
+def btn_click():
+    print("关闭")
+    QApplication.quit()
 
 def input_box(window):#为什么要加window,因为要设置组件的父对象不加也行
     #排版 竖直垂直排列 V=Vertical H=Horizontal
     layout=QVBoxLayout()
     
     #创建按钮
-    btn=QPushButton("请点击")
-    #关联点击事件/函数 
-    btn.clicked.connect(lambda:print("按钮被点击了"))
+    btn=QPushButton("关闭")
+    btn.clicked.connect(btn_click)#因为没有加括号()所以没有直接调用
+    # 或者直接放入QApplication.quit
+    # btn.clicked.connect(QApplication.quit)
+    
     #添加到layout
     layout.addWidget(btn)
     
