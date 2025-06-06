@@ -18,6 +18,16 @@ window.setWindowIcon(icon)
 
 #显示窗口
 window.show()
+#设置窗口大小
+# window.resize(400, 300)#重置窗口大小
+#几何大小 设置窗口位置和大小
+# window.setGeometry(500, 300, 400, 300)
+
+#鼠标悬停文字 说明tips
+window.setToolTip("这是一个窗口")
+
+
+
 
 # 等待窗口停止
 sys.exit(app.exec())#需要在最下面
