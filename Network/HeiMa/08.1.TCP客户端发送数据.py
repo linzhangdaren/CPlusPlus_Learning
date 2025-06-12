@@ -26,7 +26,7 @@ tcp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 '''
 
 # 3.建立TCP连接(和服务端建立连接)
-addr=('127.0.0.1', 8000) # 服务端地址 前面字符串类型后面数字类型
+addr=('127.0.0.1', 8000) # 调试助手中的 服务器 本机ip地址
 tcp_client_socket.connect(addr)
 # 4.发送数据(到服务端)
 tcp_client_socket.send('你好啊'.encode('utf-8'))

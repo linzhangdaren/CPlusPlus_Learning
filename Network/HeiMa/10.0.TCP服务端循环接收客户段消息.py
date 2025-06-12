@@ -13,7 +13,7 @@ tcp_server_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 # 2.bing 绑定ip和port 
 #只接受本地请求 如果默认不填写ip，则表示接受所有ip的请求
-tcp_server_socket.bind(('127.0.0.1',8100))#调试助手 客户端 服务器ip地址
+tcp_server_socket.bind(('127.0.0.1',8100))
 
 # 3.listen 监听连接 主动连接模式转为被动接受模式 接受客户端的连接
 tcp_server_socket.listen(128)# 最大连接数 也就是最大排队数人数
@@ -29,14 +29,18 @@ print("有新的客户端接入:",client_address)
 # 用client_socket而不是client_address 
 # 因为client_address是客户的地址 而client_socket才是客户的套接字对象
 # ////////////接受客户消息//////////
-client_data=client_socket.recv(1024)
-print("客户:",client_data.decode('utf-8'))
-# ////////////回复客户消息//////////
-client_socket.send("消息已收到".encode('utf-8'))
 
-
-# 关闭
-# 关闭客户套接字
-client_socket.close()
-# 关闭服务端套接字
+while True:
+    client_data=client_socket.recv(1024)
+    if client_data:
+        print("客户:",client_data.decode('utf-8'))
+            # ////////////回复客户消息//////////
+        client_socket.send("消息已收到".encode('utf-8'))
+    else:
+        print("客户端",client_address,"已断开连接")
+        # 关闭客户套接字
+        client_socket.close()
+        break
+    
+# 关闭服务端套接字,只是不在接受新的客户端连接 不影响已有的客户端连接
 tcp_server_socket.close()
