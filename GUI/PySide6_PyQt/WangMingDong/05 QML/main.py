@@ -4,6 +4,7 @@ from PySide6.QtGui import QGuiApplication  # 导入 QGuiApplication，用于创�
 from PySide6.QtQml import (
     QQmlApplicationEngine,
 )  # 导入 QQmlApplicationEngine，用于加载和运行 QML 文件
+from pathlib import Path
 
 if __name__ == "__main__":  # 确保脚本是直接运行，而不是被导入
     app = QGuiApplication(sys.argv)  # 创建一个QT的对象
@@ -13,7 +14,7 @@ if __name__ == "__main__":  # 确保脚本是直接运行，而不是被导入
     )  # 创建一个 QQmlApplicationEngine 实例，用于加载 QML 界面
 
     # 使用绝对路径加载 QML 文件
-    qml_path = "D:/Cache/VSCode_hc/PySide6/WangMingDong/05 QML/main.qml"  # 定义 QML 文件的绝对路径
+    qml_path = Path(__file__).parent / 'main.qml' # 定义 QML 文件的绝对路径
     engine.load(qml_path)  # 加载指定路径的 QML 文件
 
     if not engine.rootObjects():  # 检查根对象是否成功加载
