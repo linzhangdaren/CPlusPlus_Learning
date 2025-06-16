@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 // 多态简单的了解
-// 静态多态
+// 静态多态=重载
 
 int add(int a, int b)
 {
