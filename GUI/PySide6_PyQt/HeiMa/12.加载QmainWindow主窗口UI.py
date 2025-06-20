@@ -11,7 +11,7 @@ class MyWindow(QMainWindow):#继承QMainWindow类 这个名字在UI文件中clas
         self.ui = Ui_my_window()#实例化界面设计类
         self.ui.setupUi(self)#调用setupUi方法
 
-        self.init_ui()
+        self.init_ui()#构造函数调用初始化界面
         
 #______________只需要常修改的地方_________________       
     def on_btn_clicked(self):
