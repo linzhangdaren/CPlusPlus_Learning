@@ -5,7 +5,7 @@ import sys
 
 from ui.net_assist_widget_ui import Ui_NetAssistWidget#导入界面设计UI的名字
 
-class NetAssistWidget(QWidget):#继承QMainWindow类 这个名字在UI文件中class:
+class NetAssistWidget(QWidget):#继承QWidget类 这个名字在UI文件中class:
     def __init__(self,parent=None):
         super().__init__(parent)
 
