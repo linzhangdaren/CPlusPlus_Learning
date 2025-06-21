@@ -144,6 +144,6 @@ class Ui_NetAssistWidget(object):
         self.pushButton_2.setText(QCoreApplication.translate("NetAssistWidget", u"\u8fde\u63a5\u670d\u52a1\u5668", None))
         self.label.setText(QCoreApplication.translate("NetAssistWidget", u"\u672c\u5730IP", None))
         self.label_2.setText(QCoreApplication.translate("NetAssistWidget", u"\u672c\u5730\u7aef\u53e3", None))
-        self.pushButton.setText(QCoreApplication.translate("NetAssistWidget", u"PushButton", None))
+        self.pushButton.setText(QCoreApplication.translate("NetAssistWidget", u"\u53d1\u9001", None))
     # retranslateUi
 

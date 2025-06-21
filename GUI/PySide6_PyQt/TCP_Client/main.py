@@ -5,7 +5,8 @@ import sys
 
 from ui.main_window_ui import Ui_MainWindow#导入界面设计UI的名字
 
-from net_assist_widget import NetAssistWidget#导入单独设计的widget界面
+from net_assist_widget import NetAssistWidget#导入单独设计的网络助手widget界面
+from serial_assist_widget import SerAssistWidget#导入单独设计的串口widget界面
 
 class MyWindow(QMainWindow):#继承QMainWindow类 这个名字在UI文件中class:
     def __init__(self):
@@ -23,8 +24,11 @@ class MyWindow(QMainWindow):#继承QMainWindow类 这个名字在UI文件中clas
     def init_ui(self):
         #绑定按钮点击事件处理函数 btn_send是在界面设计中自定义按钮的名字
         # self.ui.pushButton.clicked.connect(self.on_btn_clicked)
-        Net=NetAssistWidget(self)#这个函数调用了NetAssistWidget()
+        Net=NetAssistWidget(self)#这个函数调用了NetAssistWidget()界面
         self.ui.tabWidget.addTab(Net, "网络助手")
+        
+        serial=SerAssistWidget(self)#调用了串口界面
+        self.ui.tabWidget.addTab(serial, "串口助手")
     
 #______________只需要常修改的地方_________________          
 
