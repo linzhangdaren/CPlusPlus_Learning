@@ -24,7 +24,7 @@ class Ui_NetAssistWidget(object):
     def setupUi(self, NetAssistWidget):
         if not NetAssistWidget.objectName():
             NetAssistWidget.setObjectName(u"NetAssistWidget")
-        NetAssistWidget.resize(583, 531)
+        NetAssistWidget.resize(675, 487)
         self.horizontalLayout_3 = QHBoxLayout(NetAssistWidget)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.groupBox = QGroupBox(NetAssistWidget)
@@ -39,6 +39,9 @@ class Ui_NetAssistWidget(object):
         self.formLayout.setWidget(0, QFormLayout.ItemRole.LabelRole, self.Label)
 
         self.cb_mode = QComboBox(self.groupBox)
+        self.cb_mode.addItem("")
+        self.cb_mode.addItem("")
+        self.cb_mode.addItem("")
         self.cb_mode.setObjectName(u"cb_mode")
 
         self.formLayout.setWidget(0, QFormLayout.ItemRole.FieldRole, self.cb_mode)
@@ -66,10 +69,10 @@ class Ui_NetAssistWidget(object):
 
         self.verticalLayout.addLayout(self.formLayout)
 
-        self.pushButton_2 = QPushButton(self.groupBox)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.btn_connect = QPushButton(self.groupBox)
+        self.btn_connect.setObjectName(u"btn_connect")
 
-        self.verticalLayout.addWidget(self.pushButton_2)
+        self.verticalLayout.addWidget(self.btn_connect)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
@@ -107,23 +110,24 @@ class Ui_NetAssistWidget(object):
 
         self.horizontalLayout.addWidget(self.lineEdit)
 
+        self.horizontalLayout.setStretch(1, 1)
 
         self.verticalLayout_2.addLayout(self.horizontalLayout)
 
-        self.horizontalLayout_2 = QHBoxLayout()
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.verticalLayout_3 = QVBoxLayout()
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.textEdit_2 = QTextEdit(NetAssistWidget)
         self.textEdit_2.setObjectName(u"textEdit_2")
 
-        self.horizontalLayout_2.addWidget(self.textEdit_2)
+        self.verticalLayout_3.addWidget(self.textEdit_2)
 
         self.pushButton = QPushButton(NetAssistWidget)
         self.pushButton.setObjectName(u"pushButton")
 
-        self.horizontalLayout_2.addWidget(self.pushButton)
+        self.verticalLayout_3.addWidget(self.pushButton)
 
 
-        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        self.verticalLayout_2.addLayout(self.verticalLayout_3)
 
 
         self.horizontalLayout_3.addLayout(self.verticalLayout_2)
@@ -139,9 +143,17 @@ class Ui_NetAssistWidget(object):
         NetAssistWidget.setWindowTitle(QCoreApplication.translate("NetAssistWidget", u"Form", None))
         self.groupBox.setTitle(QCoreApplication.translate("NetAssistWidget", u"\u7f51\u7edc\u8bbe\u7f6e", None))
         self.Label.setText(QCoreApplication.translate("NetAssistWidget", u"\u8bbe\u7f6e\u6a21\u5f0f:", None))
+        self.cb_mode.setItemText(0, QCoreApplication.translate("NetAssistWidget", u"TCP\u670d\u52a1\u5668", None))
+        self.cb_mode.setItemText(1, QCoreApplication.translate("NetAssistWidget", u"TCP\u5ba2\u6237\u7aef", None))
+        self.cb_mode.setItemText(2, QCoreApplication.translate("NetAssistWidget", u"UPD", None))
+
         self.iPLabel.setText(QCoreApplication.translate("NetAssistWidget", u"\u670d\u52a1\u5668IP:", None))
+        self.edit_target_ip.setInputMask(QCoreApplication.translate("NetAssistWidget", u"000.000.000.000", None))
         self.Label_2.setText(QCoreApplication.translate("NetAssistWidget", u"\u670d\u52a1\u5668\u7aef\u53e3", None))
-        self.pushButton_2.setText(QCoreApplication.translate("NetAssistWidget", u"\u8fde\u63a5\u670d\u52a1\u5668", None))
+        self.edit_target_port.setInputMask(QCoreApplication.translate("NetAssistWidget", u"99999", None))
+        self.edit_target_port.setText("")
+        self.edit_target_port.setPlaceholderText(QCoreApplication.translate("NetAssistWidget", u"0-65535", None))
+        self.btn_connect.setText(QCoreApplication.translate("NetAssistWidget", u"\u8fde\u63a5\u670d\u52a1\u5668", None))
         self.label.setText(QCoreApplication.translate("NetAssistWidget", u"\u672c\u5730IP", None))
         self.label_2.setText(QCoreApplication.translate("NetAssistWidget", u"\u672c\u5730\u7aef\u53e3", None))
         self.pushButton.setText(QCoreApplication.translate("NetAssistWidget", u"\u53d1\u9001", None))

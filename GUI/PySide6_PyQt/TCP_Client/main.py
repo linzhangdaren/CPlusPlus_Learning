@@ -25,7 +25,7 @@ class MyWindow(QMainWindow):#继承QMainWindow类 这个名字在UI文件中clas
         #绑定按钮点击事件处理函数 btn_send是在界面设计中自定义按钮的名字
         # self.ui.pushButton.clicked.connect(self.on_btn_clicked)
         Net=NetAssistWidget(self)#这个函数调用了NetAssistWidget()界面
-        self.ui.tabWidget.addTab(Net, "网络助手")
+        self.ui.tabWidget.addTab(Net, "网络助手")#可以创建多个直接复制此行即可
         
         serial=SerAssistWidget(self)#调用了串口界面
         self.ui.tabWidget.addTab(serial, "串口助手")
