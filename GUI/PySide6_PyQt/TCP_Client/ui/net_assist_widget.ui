@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>675</width>
-    <height>487</height>
+    <width>626</width>
+    <height>486</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -89,6 +89,10 @@
         <property name="text">
          <string>连接服务器</string>
         </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/icon/res/un_connect.svg</normaloff>:/icon/res/un_connect.svg</iconset>
+        </property>
        </widget>
       </item>
       <item>
@@ -154,6 +158,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

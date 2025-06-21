@@ -19,12 +19,13 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QFormLayout, QGroupBox,
     QHBoxLayout, QLabel, QLineEdit, QPushButton,
     QSizePolicy, QSpacerItem, QTextEdit, QVBoxLayout,
     QWidget)
+from ui import resource_rc
 
 class Ui_NetAssistWidget(object):
     def setupUi(self, NetAssistWidget):
         if not NetAssistWidget.objectName():
             NetAssistWidget.setObjectName(u"NetAssistWidget")
-        NetAssistWidget.resize(675, 487)
+        NetAssistWidget.resize(626, 486)
         self.horizontalLayout_3 = QHBoxLayout(NetAssistWidget)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.groupBox = QGroupBox(NetAssistWidget)
@@ -71,6 +72,9 @@ class Ui_NetAssistWidget(object):
 
         self.btn_connect = QPushButton(self.groupBox)
         self.btn_connect.setObjectName(u"btn_connect")
+        icon = QIcon()
+        icon.addFile(u":/icon/res/un_connect.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_connect.setIcon(icon)
 
         self.verticalLayout.addWidget(self.btn_connect)
 
