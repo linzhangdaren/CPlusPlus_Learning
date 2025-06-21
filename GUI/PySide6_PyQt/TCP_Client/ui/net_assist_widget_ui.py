@@ -54,6 +54,7 @@ class Ui_NetAssistWidget(object):
 
         self.edit_target_ip = QLineEdit(self.groupBox)
         self.edit_target_ip.setObjectName(u"edit_target_ip")
+        self.edit_target_ip.setClearButtonEnabled(True)
 
         self.formLayout.setWidget(1, QFormLayout.ItemRole.FieldRole, self.edit_target_ip)
 
@@ -64,6 +65,7 @@ class Ui_NetAssistWidget(object):
 
         self.edit_target_port = QLineEdit(self.groupBox)
         self.edit_target_port.setObjectName(u"edit_target_port")
+        self.edit_target_port.setClearButtonEnabled(True)
 
         self.formLayout.setWidget(2, QFormLayout.ItemRole.FieldRole, self.edit_target_port)
 
@@ -75,6 +77,7 @@ class Ui_NetAssistWidget(object):
         icon = QIcon()
         icon.addFile(u":/icon/res/un_connect.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btn_connect.setIcon(icon)
+        self.btn_connect.setIconSize(QSize(16, 16))
 
         self.verticalLayout.addWidget(self.btn_connect)
 

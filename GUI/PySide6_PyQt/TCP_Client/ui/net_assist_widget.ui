@@ -60,6 +60,9 @@
           <property name="inputMask">
            <string>000.000.000.000</string>
           </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
         <item row="2" column="0">
@@ -80,6 +83,9 @@
           <property name="placeholderText">
            <string>0-65535</string>
           </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -92,6 +98,12 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/icon/res/un_connect.svg</normaloff>:/icon/res/un_connect.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
         </property>
        </widget>
       </item>

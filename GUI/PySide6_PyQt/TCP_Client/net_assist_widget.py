@@ -12,15 +12,18 @@ class NetAssistWidget(QWidget):#继承QWidget类 这个名字在UI文件中class
         self.ui = Ui_NetAssistWidget()#实例化界面设计类
         self.ui.setupUi(self)#调用setupUi方法
 
-        # self.init_ui()#构造函数调用初始化界面
+        self.init_ui()#构造函数调用初始化界面
         
 #______________只需要常修改的地方_________________       
-    # def on_btn_clicked(self):
-        # print("按钮被点击了")
+#连接服务器按钮点击事件处理函数///////////////////////////////
+    def on_btn_connect(self):
+        target_ip=self.ui.edit_target_ip.text()#获取输入的IP
+        target_port=self.ui.edit_target_port.text()#获取输入的端口
+        print("连接服务器按钮被点击 IP:",target_ip,"端口:",target_port)
         
     
-    # def init_ui(self):
-        # self.ui.pushButton.clicked.connect(self.on_btn_clicked)
+    def init_ui(self):
+        self.ui.btn_connect.clicked.connect(self.on_btn_connect)
         # #绑定按钮点击事件处理函数 btn_send是在界面设计中自定义按钮的名字
 #______________只需要常修改的地方_________________          
 
