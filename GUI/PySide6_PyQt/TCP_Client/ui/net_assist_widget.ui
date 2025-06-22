@@ -33,12 +33,12 @@
          <widget class="QComboBox" name="cb_mode">
           <item>
            <property name="text">
-            <string>TCP服务器</string>
+            <string>TCP客户端</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>TCP客户端</string>
+            <string>TCP服务器</string>
            </property>
           </item>
           <item>
@@ -126,7 +126,7 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <widget class="QTextEdit" name="textEdit"/>
+      <widget class="QTextEdit" name="edit_recv"/>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,0,0">
@@ -138,7 +138,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="comboBox"/>
+        <widget class="QComboBox" name="cb_local_ip"/>
        </item>
        <item>
         <widget class="QLabel" name="label_2">
@@ -148,17 +148,17 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="edit_local_port"/>
        </item>
       </layout>
      </item>
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QTextEdit" name="textEdit_2"/>
+        <widget class="QTextEdit" name="edit_send"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btn_send">
          <property name="text">
           <string>发送</string>
          </property>

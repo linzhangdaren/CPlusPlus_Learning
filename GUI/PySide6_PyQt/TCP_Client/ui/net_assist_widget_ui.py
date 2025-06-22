@@ -90,10 +90,10 @@ class Ui_NetAssistWidget(object):
 
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.textEdit = QTextEdit(NetAssistWidget)
-        self.textEdit.setObjectName(u"textEdit")
+        self.edit_recv = QTextEdit(NetAssistWidget)
+        self.edit_recv.setObjectName(u"edit_recv")
 
-        self.verticalLayout_2.addWidget(self.textEdit)
+        self.verticalLayout_2.addWidget(self.edit_recv)
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
@@ -102,20 +102,20 @@ class Ui_NetAssistWidget(object):
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.comboBox = QComboBox(NetAssistWidget)
-        self.comboBox.setObjectName(u"comboBox")
+        self.cb_local_ip = QComboBox(NetAssistWidget)
+        self.cb_local_ip.setObjectName(u"cb_local_ip")
 
-        self.horizontalLayout.addWidget(self.comboBox)
+        self.horizontalLayout.addWidget(self.cb_local_ip)
 
         self.label_2 = QLabel(NetAssistWidget)
         self.label_2.setObjectName(u"label_2")
 
         self.horizontalLayout.addWidget(self.label_2)
 
-        self.lineEdit = QLineEdit(NetAssistWidget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.edit_local_port = QLineEdit(NetAssistWidget)
+        self.edit_local_port.setObjectName(u"edit_local_port")
 
-        self.horizontalLayout.addWidget(self.lineEdit)
+        self.horizontalLayout.addWidget(self.edit_local_port)
 
         self.horizontalLayout.setStretch(1, 1)
 
@@ -123,15 +123,15 @@ class Ui_NetAssistWidget(object):
 
         self.verticalLayout_3 = QVBoxLayout()
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.textEdit_2 = QTextEdit(NetAssistWidget)
-        self.textEdit_2.setObjectName(u"textEdit_2")
+        self.edit_send = QTextEdit(NetAssistWidget)
+        self.edit_send.setObjectName(u"edit_send")
 
-        self.verticalLayout_3.addWidget(self.textEdit_2)
+        self.verticalLayout_3.addWidget(self.edit_send)
 
-        self.pushButton = QPushButton(NetAssistWidget)
-        self.pushButton.setObjectName(u"pushButton")
+        self.btn_send = QPushButton(NetAssistWidget)
+        self.btn_send.setObjectName(u"btn_send")
 
-        self.verticalLayout_3.addWidget(self.pushButton)
+        self.verticalLayout_3.addWidget(self.btn_send)
 
 
         self.verticalLayout_2.addLayout(self.verticalLayout_3)
@@ -150,8 +150,8 @@ class Ui_NetAssistWidget(object):
         NetAssistWidget.setWindowTitle(QCoreApplication.translate("NetAssistWidget", u"Form", None))
         self.groupBox.setTitle(QCoreApplication.translate("NetAssistWidget", u"\u7f51\u7edc\u8bbe\u7f6e", None))
         self.Label.setText(QCoreApplication.translate("NetAssistWidget", u"\u8bbe\u7f6e\u6a21\u5f0f:", None))
-        self.cb_mode.setItemText(0, QCoreApplication.translate("NetAssistWidget", u"TCP\u670d\u52a1\u5668", None))
-        self.cb_mode.setItemText(1, QCoreApplication.translate("NetAssistWidget", u"TCP\u5ba2\u6237\u7aef", None))
+        self.cb_mode.setItemText(0, QCoreApplication.translate("NetAssistWidget", u"TCP\u5ba2\u6237\u7aef", None))
+        self.cb_mode.setItemText(1, QCoreApplication.translate("NetAssistWidget", u"TCP\u670d\u52a1\u5668", None))
         self.cb_mode.setItemText(2, QCoreApplication.translate("NetAssistWidget", u"UPD", None))
 
         self.iPLabel.setText(QCoreApplication.translate("NetAssistWidget", u"\u670d\u52a1\u5668IP:", None))
@@ -163,6 +163,6 @@ class Ui_NetAssistWidget(object):
         self.btn_connect.setText(QCoreApplication.translate("NetAssistWidget", u"\u8fde\u63a5\u670d\u52a1\u5668", None))
         self.label.setText(QCoreApplication.translate("NetAssistWidget", u"\u672c\u5730IP", None))
         self.label_2.setText(QCoreApplication.translate("NetAssistWidget", u"\u672c\u5730\u7aef\u53e3", None))
-        self.pushButton.setText(QCoreApplication.translate("NetAssistWidget", u"\u53d1\u9001", None))
+        self.btn_send.setText(QCoreApplication.translate("NetAssistWidget", u"\u53d1\u9001", None))
     # retranslateUi
 
