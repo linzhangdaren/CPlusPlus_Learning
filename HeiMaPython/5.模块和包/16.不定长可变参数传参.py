@@ -1,4 +1,5 @@
-#使用方法:*args 代表不定长参数，args是一个tuple，可以接收任意多个参数，参数会以tuple的形式传入。
+#使用方法:*args 代表元组不定长
+#使用**kwargs 代表字典不定长
 def sum_nums(*args):
     print(type(args))  # 输出参数的类型和内容
     print(args)  # 输出参数的类型和内容
