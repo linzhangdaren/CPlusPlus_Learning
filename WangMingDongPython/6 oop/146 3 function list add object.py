@@ -24,7 +24,7 @@ class Student:
 
 # 创建班和学生对象
 class205 = ClassRoom("205班")  # 班级对象
-stu = Student("张鹏华")  # 学生对象
+stu = Student("鹏华")  # 学生对象
 stu1 = Student("李明")  # 学生对象2
 
 # 手动一个一个把学生对象添加到班级对象里
@@ -34,7 +34,7 @@ class205.add_student(stu1)
 # 3. 通过列表让一个班类关联多个学生对象
 # 遍历现有学生列表
 for temp in class205.students:
-    print(temp.name)  # 输出张鹏华
+    print(temp.name)  # 输出鹏华
 
 # 创建学生对象3然后直接添加到班级列表里
 class205.students.append(Student("李四"))  # 通过列表添加学生对象属性
@@ -44,9 +44,9 @@ for temp in class205.students:
 
 # # 2.通过类方法关联对象
 # class205.add_student(stu)  # 班级对象里添加学生对象属性
-# print(class205.student.name)  # 输出张鹏华
+# print(class205.student.name)  # 输出鹏华
 
 
 # #1.不好的方法:在班的对象里单独加上一个学生对象名
 # class205.student = stu
-# print(class205.student.name)  # 输出张鹏华
+# print(class205.student.name)  # 输出鹏华

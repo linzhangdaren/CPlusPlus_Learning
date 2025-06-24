@@ -12,7 +12,7 @@
 // 自己定义命名空间 要在函数外定义
 namespace name_zph
 {
-    std::string zphName = "张鹏华";
+    std::string zphName = "鹏华";
     int zphAge = 25;
 }
 

@@ -6,7 +6,7 @@
 # while i <= 3:
 #     name = input("请输入用户名：")
 #     password = int(input("请输入密码："))
-#     if password == 123456 and name == "张鹏华":
+#     if password == 123456 and name == "鹏华":
 #         print("登录成功！")
 #         login_flag = True#登陆成功
 #         break  # 登陆成功，退出循环
@@ -23,7 +23,7 @@ i = 1
 while i <= 3:
     name = input("请输入用户名：")
     password = int(input("请输入密码："))
-    if password == 123456 and name == "张鹏华":
+    if password == 123456 and name == "鹏华":
         print("登录成功！")
         break  # 登陆成功，退出循环
     else:

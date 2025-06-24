@@ -16,6 +16,7 @@ class NetAssistWidget(QWidget):#继承QWidget类 这个名字在UI文件中class
         self.ui.setupUi(self)#调用setupUi方法
 
         self.init_ui()#构造函数调用初始化界面
+        self.run_tcp_client=None#
         
 #______________只需要常修改的地方_________________       
 #连接服务器按钮点击事件处理函数///////////////////////////////

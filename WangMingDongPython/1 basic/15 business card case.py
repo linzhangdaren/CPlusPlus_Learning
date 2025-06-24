@@ -1,7 +1,7 @@
 # 名片案例 business card case
 
 # 1.打印名片
-name = "张鹏华"
+name = "鹏华"
 email = "zph@qq.com"
 www = "www.zph.com"
 qq = 1234

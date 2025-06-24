@@ -18,8 +18,8 @@ class Student:
 
 
 class205 = ClassRoom("205班")  # 班级对象
-stu = Student("张鹏华")  # 学生对象
+stu = Student("鹏华")  # 学生对象
 
 # 1.不好的方法:在班的对象里单独加上一个学生对象名
 class205.student = stu
-print(class205.student.name)  # 输出张鹏华
+print(class205.student.name)  # 输出鹏华
