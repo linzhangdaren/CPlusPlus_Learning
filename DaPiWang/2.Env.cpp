@@ -11,6 +11,8 @@ int main()
     SetConsoleCP(65001);
 
     cout << "你好!" << endl;
+    // endl换行 全称endline结束行的意思
+
     // 暂停窗口
     system("pause");
     return 0;
