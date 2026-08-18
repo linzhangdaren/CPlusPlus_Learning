@@ -1,0 +1,1 @@
+#课程地址:【嵌入式开发2024 04阶段：Python与上位机开发】https://www.bilibili.com/video/BV1PUiFeoEvx?vd_source=d4f406245cfeb1739989d1008109ebbf

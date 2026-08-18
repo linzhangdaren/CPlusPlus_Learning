@@ -1,0 +1,23 @@
+classDiagram
+    class Bullet {
+        +string name
+        +int damage
+        +Bullet(string name, int damage)
+    }
+
+    class Gun {
+        +string name
+        +Gun(string name)
+    }
+
+    class Person {
+        +string name
+        +Gun* gun
+        +Bullet* bullet
+        +Person(string name)
+        +GetGun(Gun* gun): void
+        +GetBullet(Bullet* bullet): void
+    }
+
+    Person --> Gun : 持有指针
+    Person --> Bullet : 持有指针
