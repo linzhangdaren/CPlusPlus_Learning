@@ -1,0 +1,15 @@
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\bin\Debug\net10.0\Brackeys_C#.exe
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\bin\Debug\net10.0\Brackeys_C#.deps.json
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\bin\Debug\net10.0\Brackeys_C#.runtimeconfig.json
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\bin\Debug\net10.0\Brackeys_C#.dll
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\bin\Debug\net10.0\Brackeys_C#.pdb
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.GeneratedMSBuildEditorConfig.editorconfig
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.AssemblyInfoInputs.cache
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.AssemblyInfo.cs
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.csproj.CoreCompileInputs.cache
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.sourcelink.json
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.dll
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\refint\Brackeys_C#.dll
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.pdb
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\Brackeys_C#.genruntimeconfig.cache
+d:\Cache\CPlusPlus_Learning\Brackeys_C#\obj\Debug\net10.0\ref\Brackeys_C#.dll
