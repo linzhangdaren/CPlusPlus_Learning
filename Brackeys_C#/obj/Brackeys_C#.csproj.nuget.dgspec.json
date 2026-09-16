@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj": {}
+    "D:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj": {}
   },
   "projects": {
-    "d:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj": {
+    "D:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj",
+        "projectUniqueName": "D:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj",
         "projectName": "Brackeys_C#",
-        "projectPath": "d:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj",
+        "projectPath": "D:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\Brackeys_C#.csproj",
         "packagesPath": "C:\\Users\\73908\\.nuget\\packages\\",
-        "outputPath": "d:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\obj\\",
+        "outputPath": "D:\\Cache\\CPlusPlus_Learning\\Brackeys_C#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

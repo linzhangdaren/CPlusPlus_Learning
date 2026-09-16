@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Brackeys_C#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b478df10b1277429a4578a2de690fc428043507")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71dafc8081d35c5e91ce900af8dfcaaed694b7b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Brackeys_C#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Brackeys_C#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
