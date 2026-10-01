@@ -1,13 +1,11 @@
-//五只小猪称体重，谁最大？
+// 浜斿彧灏忕尓绉颁綋閲嶏紝璋佹渶澶э紵
 
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-
 
 int main()
 {
-	int arr[5] = { 300,100,43,391,500 };
+	int arr[5] = {300, 100, 43, 391, 500};
 	int max = 0;
 	for (int i = 0; i < 5; i++)
 	{

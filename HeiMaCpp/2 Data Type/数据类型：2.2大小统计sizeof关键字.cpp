@@ -1,5 +1,5 @@
-//¿ÉÒÔÍ³¼ÆÊı¾İÀàĞÍÕ¼ÓÃÄÚ´æµÄ´óĞ¡
-//°¸Àı£ºcout<<sizeof(Êı¾İÀàĞÍ»òÕß±äÁ¿£©<<endl;
+//å¯ä»¥ç»Ÿè®¡æ•°æ®ç±»å‹å ç”¨å†…å­˜çš„å¤§å°
+//æ¡ˆä¾‹ï¼šcout<<sizeof(æ•°æ®ç±»å‹æˆ–è€…å˜é‡ï¼‰<<endl;
 #include<iostream>
 using namespace std;
 
@@ -10,10 +10,10 @@ int main()
 	long c = 1;
 	long long d = 1;
 
-	cout << "shortÕ¼ÓÃÄÚ´æ£º" << sizeof(short) <<"×Ö½Ú"<< endl;//»òÕßsizeof(a)
-	cout << "intÕ¼ÓÃÄÚ´æ£º" << sizeof(int) << "×Ö½Ú" << endl;//»òÕßsizeof(b)
-	cout << "longÕ¼ÓÃÄÚ´æ£º" << sizeof(long) << "×Ö½Ú" << endl;//»òÕßsizeof(c)
-	cout << "long longÕ¼ÓÃÄÚ´æ£º" << sizeof(long long) << "×Ö½Ú" << endl;//»òÕßsizeof(d)
+	cout << "shortå ç”¨å†…å­˜ï¼š" << sizeof(short) <<"å­—èŠ‚"<< endl;//æˆ–è€…sizeof(a)
+	cout << "intå ç”¨å†…å­˜ï¼š" << sizeof(int) << "å­—èŠ‚" << endl;//æˆ–è€…sizeof(b)
+	cout << "longå ç”¨å†…å­˜ï¼š" << sizeof(long) << "å­—èŠ‚" << endl;//æˆ–è€…sizeof(c)
+	cout << "long longå ç”¨å†…å­˜ï¼š" << sizeof(long long) << "å­—èŠ‚" << endl;//æˆ–è€…sizeof(d)
 
 	system("pause");
 	return 0;

@@ -1,4 +1,4 @@
-//æ≈æ≈≥À∑®±Ì
+//‰πù‰πù‰πòÊ≥ïË°®
 #include<iostream>
 using namespace std;
 
@@ -8,7 +8,7 @@ int main()
 	{
 		for (int b = 1; b <= a; b++)
 		{
-			cout << b << "°¡" << a << "=" << b * a << "\t";
+			cout << b << "√ó" << a << "=" << b * a << "\t";
 		}
 		cout << endl;
 	}

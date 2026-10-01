@@ -1,56 +1,56 @@
-//Ê×Î»½»»»ÔªËØ
-//int start = 0;
-//int end = sizeof(arr)/sizeof(arr[0])-1
+// é¦–ä½äº¤æ¢å…ƒç´ 
+// int start = 0;
+// int end = sizeof(arr)/sizeof(arr[0])-1
 //
-// arr    1   2    3   4   5
-//ÏÂ±ê	  0   1    2   3   4 
-//int temp = arr[strat];
-//arr[start] = arr[end];
-//arr[end] = temp;
+//  arr    1   2    3   4   5
+// ä¸‹æ ‡	  0   1    2   3   4
+// int temp = arr[strat];
+// arr[start] = arr[end];
+// arr[end] = temp;
 
-
-
-#include<iostream>
+#include <iostream>
 using namespace std;
-//1¡¢´´½¨Êı×é
+#include <windows.h>
+
+// 1ã€åˆ›å»ºæ•°ç»„
 int main()
 {
-	int arr[5] = { 1,2,3,4,5 };
+	// è®¾ç½®æ§åˆ¶å°ç¼–ç ä¸ºUTF-8
+	SetConsoleOutputCP(CP_UTF8);
 
-	cout << "Êı×éÄæÖÃÖ®Ç°" << endl;
+	int arr[5] = {1, 2, 3, 4, 5};
+
+	cout << "æ•°ç»„é€†ç½®ä¹‹å‰" << endl;
 
 	for (int i = 0; i < 5; i++)
-	{	
+	{
 		cout << arr[i] << endl;
 	}
-	//2¡¢ÊµÏÖÄæĞò
-	//2.1¼ÇÂ¼ÆğÊ¼ÏÂ±êÎ»ÖÃ
-	//2.2¼ÇÂ¼½áÊøÏÂ±êÎ»ÖÃ
-	//2.3ÆğÊ¼ÏÂ±êÎ»ÖÃÓë½áÊøÏÂ±êÎ»ÖÃ»¥»»
-	//2.4ÆğÊ¼Î»ÖÃ++ ½áÊøÎ»ÖÃ--
-	//2.5Ñ­»·Ö´ĞĞ£º2.1µ½ÆğÊ¼Î»ÖÃ>=½áÊøÎ»ÖÃ
+	// 2ã€å®ç°é€†åº
+	// 2.1è®°å½•èµ·å§‹ä¸‹æ ‡ä½ç½®
+	// 2.2è®°å½•ç»“æŸä¸‹æ ‡ä½ç½®
+	// 2.3èµ·å§‹ä¸‹æ ‡ä½ç½®ä¸ç»“æŸä¸‹æ ‡ä½ç½®äº’æ¢
+	// 2.4èµ·å§‹ä½ç½®++ ç»“æŸä½ç½®--
+	// 2.5å¾ªç¯æ‰§è¡Œï¼š2.1åˆ°èµ·å§‹ä½ç½®>=ç»“æŸä½ç½®
 
-	int start = 0;//ÆğÊ¼ÏÂ±êÎ»ÖÃ
-	int end = sizeof(arr) / sizeof(0) - 1;//½áÊøÎ»ÖÃ
+	int start = 0;						   // èµ·å§‹ä¸‹æ ‡ä½ç½®
+	int end = sizeof(arr) / sizeof(0) - 1; // ç»“æŸä½ç½®
 
-		while (start<end)
+	while (start < end)
 	{
 		int temp = arr[start];
 		arr[start] = arr[end];
 		arr[end] = temp;
-	//¸üĞÂÏÂ±ê
+		// æ›´æ–°ä¸‹æ ‡
 		start++;
 		end--;
 	}
-		cout << "Êı×éÔªËØÖÃ»»ºó" << endl;
+	cout << "æ•°ç»„å…ƒç´ ç½®æ¢å" << endl;
 
-		for (int i = 0; i < 5; i++)
-		{
-			cout << arr[i] << endl;
-		}
-
-
-
+	for (int i = 0; i < 5; i++)
+	{
+		cout << arr[i] << endl;
+	}
 
 	system("pause");
 	return 0;

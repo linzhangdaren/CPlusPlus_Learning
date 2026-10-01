@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-// º¯ÊıµÄ»ù´¡Ê¹ÓÃ
+// å‡½æ•°çš„åŸºç¡€ä½¿ç”¨
 
-int add(int num1, int num2) // num1 num2ÎªĞÎ²Î ĞÎÊ½¿Ú´ü
+int add(int num1, int num2) // num1 num2ä¸ºå½¢å‚ å½¢å¼å£è¢‹
 {
 	int sum = num1 + num2;
 	return sum;
@@ -12,7 +12,7 @@ int main()
 {
 	int a = 10;
 	int b = 20;
-	int c = add(a, b); // abÎªÊµ²Î
+	int c = add(a, b); // abä¸ºå®å‚
 	cout << c << endl;
 
 	return 0;

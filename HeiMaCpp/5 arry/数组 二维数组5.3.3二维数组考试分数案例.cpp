@@ -1,4 +1,4 @@
-//·Ö±ğÊä³öÈıÎ»Í¬Ñ§µÄ×Ü·ÖÊı
+//åˆ†åˆ«è¾“å‡ºä¸‰ä½åŒå­¦çš„æ€»åˆ†æ•°
 
 #include<iostream>
 using namespace std;
@@ -22,17 +22,17 @@ int main()
 	//cout << scores[2][1] << " ";
 	//cout << scores[2][2] << endl;
 
-	string names[3] = { "ÕÅÈı","ÀîËÄ","ÍõÎå" };
+	string names[3] = { "å¼ ä¸‰","æå››","ç‹äº”" };
 
 	for (int i = 0; i < 3; i++)
 	{
-		int sum = 0;//Í³¼Æ·ÖÊı×ÜºÍ±äÁ¿
+		int sum = 0;//ç»Ÿè®¡åˆ†æ•°æ€»å’Œå˜é‡
 		for (int j = 0; j < 3; j++)
 		{
 			sum += scores[i][j];
 		}
-		cout << names[i] << "µÄ×Ü·ÖÎª£º" << sum << endl;
-		//cout << "µÚ " << i + 1 << "¸öÈËµÄ×Ü·ÖÎª£º" << sum << endl;
+		cout << names[i] << "çš„æ€»åˆ†ä¸ºï¼š" << sum << endl;
+		//cout << "ç¬¬ " << i + 1 << "ä¸ªäººçš„æ€»åˆ†ä¸ºï¼š" << sum << endl;
 	}
 	cout << endl;
 

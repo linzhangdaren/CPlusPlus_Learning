@@ -1,9 +1,9 @@
-//switch (ÕûÊı»ò×Ö·ûĞÍ)  ´ò·Ö°¸Àı switchÄ¿Â¼Ê÷¸ÉÇåÎú£¬Ğ§ÂÊ¸ß
+//switch (æ•´æ•°æˆ–å­—ç¬¦å‹)  æ‰“åˆ†æ¡ˆä¾‹ switchç›®å½•æ ‘å¹²æ¸…æ™°ï¼Œæ•ˆç‡é«˜
 // //{
-////	case ½á¹û1£ºÖ´ĞĞÓï¾ä; break;
-//		case ½á¹û2£ºÖ´ĞĞÓï¾ä; braak;
+////	case ç»“æœ1ï¼šæ‰§è¡Œè¯­å¥; break;
+//		case ç»“æœ2ï¼šæ‰§è¡Œè¯­å¥; braak;
 //			....
-//		default:Ö´ĞĞÓï¾ä; break;
+//		default:æ‰§è¡Œè¯­å¥; break;
 //}
 
 #include<iostream>
@@ -13,18 +13,18 @@ int main()
 {
 	int f = 0;
 
-	cout << "Çë¸øµçÓ°´ò·Ö" << endl;
+	cout << "è¯·ç»™ç”µå½±æ‰“åˆ†" << endl;
 	cin >> f;
-	cout << "Äú´òµÄ·ÖÎª" << f << endl;
+	cout << "æ‚¨æ‰“çš„åˆ†ä¸º" << f << endl;
 
 	switch (f)
 	{
 	case 10:
-		cout << "ÄúÈÏÎªÊÇ¾­µäµçÓ°" << endl; break;
+		cout << "æ‚¨è®¤ä¸ºæ˜¯ç»å…¸ç”µå½±" << endl; break;
 	case 9:
-		cout << "ÄúÎªµçÓ°Ò»°ã" << endl; break;
+		cout << "æ‚¨ä¸ºç”µå½±ä¸€èˆ¬" << endl; break;
 	default:
-		cout << "ÄúÈËÎªÊÇÀÃÆ¬" << endl; break;
+		cout << "æ‚¨äººä¸ºæ˜¯çƒ‚ç‰‡" << endl; break;
 
 	}
 

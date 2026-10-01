@@ -1,5 +1,5 @@
-//goto 标记;
-//标记:
+//goto 鏍囪;
+//鏍囪:
 
 #include<iostream>
 using namespace std;

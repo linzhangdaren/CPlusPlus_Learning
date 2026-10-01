@@ -1,5 +1,5 @@
-//srand((unsigned int)time(NULL));//Ê±¼äËæ»úÖÖ×Ó£¬ĞèÒªÍ·ÎÄ¼ş#include<ctime>
-//rand() % 100 + 1;//Ëæ»úÊı
+//srand((unsigned int)time(NULL));//æ—¶é—´éšæœºç§å­ï¼Œéœ€è¦å¤´æ–‡ä»¶#include<ctime>
+//rand() % 100 + 1;//éšæœºæ•°
 
 #include<iostream>
 using namespace std;
@@ -10,22 +10,22 @@ int main()
 	srand((unsigned int)time(NULL));
 	int m = rand() % 100 + 1;
 	int x = 0;
-	cout << "ÇëÊäÈëÄú²ÂµÄÊı×Ö" << endl;
+	cout << "è¯·è¾“å…¥æ‚¨çŒœçš„æ•°å­—" << endl;
 
 	while (1)
 	{
 		cin >> x;
 		if (x > m)
 		{
-			cout << "Äú²ÂµÄ¹ı´ó" << endl;
+			cout << "æ‚¨çŒœçš„è¿‡å¤§" << endl;
 		}
 		else if (x < m)
 		{
-			cout << "Äú²ÂµÄ¹ıĞ¡" << endl;
+			cout << "æ‚¨çŒœçš„è¿‡å°" << endl;
 		}
 		else
 		{
-			cout << "¹§Ï²Äú²Â¶ÔÁË" << endl;
+			cout << "æ­å–œæ‚¨çŒœå¯¹äº†" << endl;
 			break;
 		}
 	}

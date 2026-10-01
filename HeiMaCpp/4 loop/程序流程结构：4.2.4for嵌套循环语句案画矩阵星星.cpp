@@ -1,4 +1,4 @@
-//for Ç¶Ì×Ñ­»·Óï¾ä
+//for åµŒå¥—å¾ªç¯è¯­å¥
 
 #include<iostream>
 using namespace std;
