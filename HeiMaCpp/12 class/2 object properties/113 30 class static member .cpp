@@ -11,8 +11,8 @@ public:
     // 类内声明:int m_A;
     static int m_A; // 如果卸载private下，则类外无法访问
 };
-// 类外初始化:int Person::m_A=100;
-// 但是这样是全局变量看不出来是Person的成员
+// 类外初始化:int Person::m_A=100;必须有初始值不然没办法使用
+// 要加上 Person:: 不然直接就成全局变量了如: int abc =100;
 int Person::m_A = 100;
 
 void test01()

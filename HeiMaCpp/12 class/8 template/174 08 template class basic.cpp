@@ -3,7 +3,7 @@
 using namespace std;
 // 模板类 基本语法 和函数模板差不多
 
-template <class NameType, class AgeType> // 俩类型参数
+template <class NameType, class AgeType> // 俩类型参数 也可以一样但提前要设计好
 class Person
 {
 public:

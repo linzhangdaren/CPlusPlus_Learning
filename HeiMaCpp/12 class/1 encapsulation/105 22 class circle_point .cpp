@@ -10,25 +10,12 @@ private:
     int m_y; // y坐标
 public:
     // 设置/获取x坐标
-    void set_x(int x)
-    {
-        m_x = x;
-    }
+    void set_x(int x) { m_x = x; }
+    int get_x() { return m_x; }
 
-    int get_x()
-    {
-        return m_x;
-    }
     // 设置/获取y坐标
-    void set_y(int y)
-    {
-        m_y = y;
-    }
-
-    int get_y()
-    {
-        return m_y;
-    }
+    void set_y(int y) { m_y = y; }
+    int get_y() { return m_y; }
 };
 // 圆类
 class Circle
@@ -37,26 +24,13 @@ private:
     int m_r;        // 定义半径
     Point m_center; // 定义圆心
 public:
-    // 设置半径
-    void set_r(int r)
-    {
-        m_r = r;
-    }
-    // 获取半径
-    int get_r()
-    {
-        return m_r;
-    }
-    // 设置圆心
-    void set_center(Point center)
-    {
-        m_center = center;
-    }
-    // 获取圆心
-    Point get_center()
-    {
-        return m_center;
-    }
+    // 设置/获取半径
+    void set_r(int r) { m_r = r; }
+    int get_r() { return m_r; }
+
+    // 设置/获取圆心
+    void set_center(Point center) { m_center = center; }
+    Point get_center() { return m_center; }
 };
 // 判断点和圆的关系
 void is_in_circle(Circle &c, Point &p)

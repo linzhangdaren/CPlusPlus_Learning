@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// 模板 template <typename T> 1.函数模板 2.类模板
+// 泛型编程 模板 template <typename T> 1.函数模板 2.类模板
 // template 声明创建模板 (类似class)
 // typename 类型参数 写class也行一般类模板用class较多(类似int)
 // T 模板参数占位符通用数据类型(类似变量a)
@@ -51,7 +51,7 @@ void test02()
     cout << "b = " << b << endl;
 }
 
-// 主函数
+// 主函数 
 int main()
 {
 
