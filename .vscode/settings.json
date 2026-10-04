@@ -80,5 +80,8 @@
     "terminal.integrated.shellArgs.windows": ["/K", "chcp 65001 >nul"], // Windows终端设置UTF-8编码
     "terminal.integrated.fontFamily": "Consolas",
     "commentTranslate.source": "Bing",
-    "python-envs.defaultEnvManager": "ms-python.python:system" // 终端字体设置为Consolas
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "cSpell.words": [
+        "chcp"
+    ] // 终端字体设置为Consolas
 }
