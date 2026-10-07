@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 // 左移运算符 基本逻辑
+// 简化输出打印对象 直接cout<<p<<endl;就能输出p对象的所有属性值
 class Person
 {
 public:

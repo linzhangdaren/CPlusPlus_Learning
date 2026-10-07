@@ -2,6 +2,8 @@
 using namespace std;
 // 运算符重载
 // 写一个全局函数，实现两个Person对象相加
+// 成员函数和全局函数都可以实现运算符重载
+// 区别是：成员函数的this指针默认指向调用它的对象，全局函数没有this指针
 
 class Person
 {
