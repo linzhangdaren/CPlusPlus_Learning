@@ -39,7 +39,7 @@ void printVector(vector<int> &v)
     cout << endl;
 }
 
-// vector 容器构造
+
 void test01()
 {
     vector<int> v1; // 默认构造函数

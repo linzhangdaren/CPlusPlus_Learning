@@ -6,9 +6,9 @@ using namespace std;
 
 /*
 empty()	判断容器是否为空
-capacity()	容器容量
+capacity()	容器容量 永远大于等于size
 size()	容器大小
-resize(int num)	重新指定容器大小 长度为num 
+resize(int num)	重新指定容器大小 长度为num
 */
 
 // 打印函数
@@ -21,7 +21,7 @@ void printVector(vector<int> &v)
     cout << endl;
 }
 
-// vector 容器构造
+
 void test01()
 {
     vector<int> v1;
@@ -31,17 +31,22 @@ void test01()
     }
     printVector(v1);
 
-    vector<int> v2;
-    v2 = v1;
-    printVector(v2);
+    // 判断是否为空
+    if (v1.empty())
+    {
+        cout << "v1为空" << endl;
+    }
+    else
+    {
+        cout << "v1不为空" << endl;
+        cout << "v1的大小为" << v1.size() << endl;
+        cout << "v1的容量为" << v1.capacity() << endl;
+    }
 
-    vector<int> v3;
-    v3.assign(v1.begin(), v1.end());
-    printVector(v3);
-
-    vector<int> v4;
-    v4.assign(10, 100);
-    printVector(v4);
+    // 重新指定大小 超出部分删除 新位置默认值为0
+    v1.resize(15); // 如果想用别的数填充空值就resize(15, 100)100为填充值
+    printVector(v1);
+    cout << "v1的大小为" << v1.size() << endl;
 }
 
 int main()
